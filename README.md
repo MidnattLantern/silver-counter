@@ -1,4 +1,4 @@
-Live link: https://midnattlantern.github.io/tech-silver-list
+Live link: https://midnattlantern.github.io/tech-silver-counter/
 
 Tech Silver List was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -15,7 +15,7 @@ bash:
 `npm install gh-pages --save-dev`
 
 2. Add homepage in package.json:
-`  "homepage": "https://midnattlantern.github.io/tech-silver-list/"`
+`  "homepage": "https://midnattlantern.github.io/tech-silver-counter/"`
 
 3. Add inside scripts of package.json:
 `  "predeploy": "npm run build",`
