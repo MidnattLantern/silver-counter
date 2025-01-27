@@ -1,5 +1,5 @@
 {
-  "name": "tech-silver-list",
+  "name": "tech-silver-counter",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@types/uuid": "^10.0.0",
-    "gh-pages": "^6.2.0"
+    "gh-pages": "^6.3.0"
   },
   "homepage": "https://midnattlantern.github.io/tech-silver-counter/"
 }
