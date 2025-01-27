@@ -47,5 +47,5 @@
     "@types/uuid": "^10.0.0",
     "gh-pages": "^6.3.0"
   },
-  "homepage": "https://midnattlantern.github.io/tech-silver-counter/"
+  "homepage": "https://midnattlantern.github.io/silver-counter/"
 }
