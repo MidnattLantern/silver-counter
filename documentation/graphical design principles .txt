@@ -1,0 +1,3 @@
+The list itself in Silver list has a fixed height of 120 px, and is set to centre items vertically (using align-items: center;)
+
+Each item is set to a diffrent component. No margin next to each other, fixed size of width: 200px; height: 100px;

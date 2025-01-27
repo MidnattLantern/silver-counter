@@ -1,0 +1,35 @@
+Context that is accessible globaly across silver list
+Context is a DRY approach and portable approach, to allow components pass data remotely, rather than repeating and passing data across parents and children.
+
+Silver List use UUID
+``` bash
+npm install uuid
+```
+because of Typescript
+``` bash
+npm install @types/uuid --save-dev
+```
+
+Any context provider, such as silverListContext need to wrap <App /> inside index.tsx so that it can be accessible across the entire app. Like this:
+```javascript
+root.render(
+  <React.StrictMode>
+    <SilverListProvider>
+      <App />
+    </SilverListProvider>
+  </React.StrictMode>
+);
+```
+
+Currently, the array hold an id and a name. More items can be added depending on needs.
+
+silverListArray retrieve the array.
+setSilverListArray is the link to CRUD actions.
+addSilverListItem create an item. UUID is not provided by this context component.
+
+Interface for creating,
+Interface for erasing,
+Interface for holding a current item by index,
+Interface for selecting,
+
+holdSilverListArrayIndex is different from holdSilverListItem, as it keep track of the array

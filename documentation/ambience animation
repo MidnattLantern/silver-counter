@@ -1,0 +1,23 @@
+This project is built with Typescript. Using the vanilla approach by importing assets won't work. React need assets to be imported as components before they can be used. IE
+``` typescript
+import Ambience from "../../assets/wallpaper/SilverAmbientAnimation.gif";
+```
+
+The component itself has a low resolution to save space and memory, because it will be blurred anyways, the quality doesn't matter.
+Blurring is achieved from the cascade styles sheet with the filter.
+Pointer-events disable interaction with the wallpaper, preventing awkward interaction.
+Posiiton is fixed so that the wallpaper is stacked on the z-axis rather than x or y.
+This component function as the wallpaper for silver list.
+```css
+.FitAmbience{
+    width: 100%;
+    height: 100%;
+    filter: blur(100px);
+    position: fixed;
+    pointer-events: none;
+}
+```
+
+Elements displaying over this window will be automatically hidden. By adding:
+`    backdrop-filter: blur(0px);`
+to the base element, it will appear above the ambience animation

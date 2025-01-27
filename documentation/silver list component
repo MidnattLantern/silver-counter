@@ -1,0 +1,10 @@
+Passing functions across children and parents in typescript require some extra steps.
+An interface has to be declared with void, and React.FC<> also has to be added in the const.
+
+``` typescript
+interface SilverListProps {
+    handleCreateItem: () => void;
+}
+
+const SilverList: React.FC<SilverListProps> = ({ handleCreateItem }) => {...}
+```

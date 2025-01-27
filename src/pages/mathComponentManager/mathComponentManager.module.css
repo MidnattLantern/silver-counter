@@ -1,0 +1,57 @@
+.MathComponentManagerBaseModule{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(0px); /* apply backdrop to appear before background layer*/
+}
+.MasterModule{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--dark-transparent);
+    border: 1px solid var(--edge);
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-radius: 2px;
+    width: 400px;
+    height: 200px;
+    box-shadow: inset 0px 0px 10px 0px var(--dark-transparent);
+}
+
+.SelectMathComponent{ /* left component */
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 125px; /* master - 125px */
+}
+
+.SwitchCaseComponent{ /* right component*/
+    width: 275px; /* master - 275px */
+    margin: 15px;
+    margin-left: 0px;
+}
+
+.ComponentOption{ /* Button for selecting a math option */
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+    background-color: var(--dark-transparent);
+    color: var(--white-offset);
+    border: 1.5px solid var(--edge);
+    border-radius: 2px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.25);
+    transition: all 0.25s ease;
+}
+.ComponentOption:hover{
+    color: var(--theme);
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+.ComponentOption:active{
+    color: var(--white-offset);
+    background-color: rgba(0,0,0,0.25);
+    transition: all 0.1s ease;
+}

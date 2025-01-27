@@ -1,0 +1,23 @@
+.SlopeMathBaseModule{
+    backdrop-filter: blur(0px); /* apply backdrop to appear before background layer*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SlopeTable{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.AlignTableRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.AssignButton{
+    margin-left: 10px;
+}
